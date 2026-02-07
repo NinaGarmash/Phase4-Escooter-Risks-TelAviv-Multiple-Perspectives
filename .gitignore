@@ -1,0 +1,27 @@
+# Power BI files (large, binary)
+*.pbix
+
+# Raw data files
+Raw Data/
+deprecated/
+
+# Video files
+*.mp4
+
+# Large PDFs
+*.pdf
+
+# Backup folders
+pbi_backups/
+
+# QGIS project files
+*.qmd
+*.qgz
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+~$*
