@@ -3,7 +3,7 @@
 **E-Scooter Safety Analytics · Phase 4 of 4** ⏳ In progress
 Part of a longitudinal multi-phase research project on micro-mobility safety in Israel.
 
-← Previous phase: [Phase 3 — CBS crash analytics](https://github.com/NinaGarmash/Escooter-Accidents-TelAviv-Israel-CBS-2013-2025)
+← Previous phase: [Phase 3 — CBS crash analytics](https://github.com/NinaGarmash/Phase3-Escooter-Accidents-TelAviv-CBS-2013-2025)
 
 ---
 
@@ -129,7 +129,7 @@ all modes    micromobility  e-scooters     e-scooters
                                           (this repo)
 ```
 
-← **Phase 3**: [Escooter-Accidents-TelAviv-Israel-CBS-2013-2025](https://github.com/NinaGarmash/Escooter-Accidents-TelAviv-Israel-CBS-2013-2025)
+← **Phase 3**: [Phase3-Escooter-Accidents-TelAviv-CBS-2013-2025](https://github.com/NinaGarmash/Phase3-Escooter-Accidents-TelAviv-CBS-2013-2025)
 
 ---
 
