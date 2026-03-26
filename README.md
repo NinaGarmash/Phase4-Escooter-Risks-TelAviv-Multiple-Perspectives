@@ -1,254 +1,121 @@
-# E-Scooter Accident Analytics Dashboard - Tel Aviv
-
-An interactive Power BI dashboard analyzing electric scooter crashes, injuries, and road safety data in Tel Aviv-Jaffo, Israel.
-
-## Overview
-
-This project provides comprehensive analytics on micromobility accidents with a focus on e-scooters. The dashboard enables exploration of accident patterns by:
-
-- **Location** - Interactive maps with Tel Aviv neighborhood boundaries
-- **Time** - Trends by year, month, day of week, and hour
-- **Severity** - Light, moderate, and severe injury classifications
-- **Demographics** - Age groups and gender analysis
-- **Conditions** - Weather, lighting, road surface, and traffic factors
-- **Vehicle Types** - E-scooters, bicycles, e-bikes, and mobility scooters
-
-## Getting Started
-
-### Requirements
-
-- Microsoft Power BI Desktop (free download from Microsoft)
-
-### Opening the Dashboard
-
-1. Download and install [Power BI Desktop](https://powerbi.microsoft.com/desktop/)
-2. Open `escooter_TA_new.pbix`
-3. The dashboard will load with all data embedded
-
-## Data Sources
-
-The dashboard uses three main datasets located in `Raw Data/`:
-
-| File | Description | Records |
-|------|-------------|---------|
-| `markers_hebrew(3).csv` | Accident incidents with location and conditions | ~774K |
-| `involved_hebrew(3).csv` | People and vehicles involved with injury data | ~1.7M |
-| `vehicles_hebrew(3).csv` | Vehicle details and classifications | ~1.3M |
-
-**Geographic Data:** `tlv_quarters_new.geojson` provides Tel Aviv neighborhood boundaries for map visualizations.
-
-**Data Coverage:** 2013-2025
-
-## Project Structure
-
-```
-escooter_TA_new.pbix              # Main Power BI dashboard
-Raw Data/                         # Source CSV files (Hebrew)
-tlv_quarters_new.geojson          # Tel Aviv neighborhood boundaries
-pbi_backups/                      # Dashboard version history
-E-Scooter Crashes in TA Report (live PBI).pptx  # Presentation
-escooter_TA_dec5_datadct.pdf      # Data dictionary
-```
-
-## Key Metrics
-
-The dashboard calculates:
-
-- Total accidents by vehicle type
-- Year-over-year (YoY) change analysis
-- Year-to-date (YTD) comparisons
-- Daily averages and trends
-- Injury severity distributions
-- Geographic hotspots by neighborhood
-
-## Documentation
-
-- **Data Dictionary:** `escooter_TA_dec5_datadct.pdf` - Detailed field definitions
-- **Presentation:** `E-Scooter Crashes in TA Report (live PBI).pptx`
-- **Demo Videos:** `escooter_demo.mp4`, `Escooter_demo_Technion.mp4`
-
-## Notes
-
-- All data labels are in Hebrew
-- Coordinates use both Israeli grid (x,y) and WGS84 (lat/long) formats
-- Dashboard versions are manually tracked in `pbi_backups/`
-
-## Related Resources
-
-- [ANYWAY Road Safety Project](https://www.anyway.co.il/) - Open-source road safety data platform for Israel
-# E-Scooter Safety Analytics — Tel Aviv, Full Integration (Phase 4)
+# E-Scooter Risks in Tel Aviv from Multiple Perspectives
 
 **E-Scooter Safety Analytics · Phase 4 of 4** ⏳ In progress
 Part of a longitudinal multi-phase research project on micro-mobility safety in Israel.
 
----
-
-## Live outputs
-
-📄 **[Helmet Law Impact Analysis (PDF)](https://drive.google.com/file/d/12wUPVA6wVrCO5aCA4F2NSh4VQ4U3GJhx/view?usp=sharing)**
-📄 **[Solo Crash Underreporting Study (PDF)](https://drive.google.com/file/d/1yDOfrgqR4Ku8w038n60RrZ-FDGRHATtb/view?usp=sharing)**
-📄 **[Conference Abstract — ISTRC 2026 (PDF)](https://drive.google.com/file/d/1MEfFH1yWVjxsaFLYR8m6oUdbzwV/view?usp=sharing)**
+← Previous phase: [Phase 3 — CBS crash analytics](https://github.com/NinaGarmash/Escooter-Accidents-TelAviv-Israel-CBS-2013-2025)
 
 ---
 
-## What this phase covers
+## What makes Phase 4 different
 
-The full integration phase adds three external data sources to the CBS crash records, enabling cross-source validation and producing two standalone research outputs. This is the most analytically complex phase — combining crash microdata with survey self-reports and police enforcement records to triangulate findings that no single source can establish alone.
+| | Phase 3 | Phase 4 |
+|---|---|---|
+| **CBS scope** | Tel Aviv + national benchmarking | **Tel Aviv only** — no comparison with Israel totals |
+| **Data sources** | CBS crash data + OpenDataTLV | CBS + surveys + enforcement + field observations |
+| **Spatial layers** | Quarters + streets | Quarters + streets + **bike lanes and road types** (coming) |
+| **Outputs** | Single integrated dashboard | Dashboard + **standalone reports on narrow topics** |
 
-| Attribute | Value |
-|---|---|
-| **Geography** | Tel Aviv–Yafo |
-| **Years** | 2013–2025 (CBS) · 2019–2022 (surveys) · 2019–2024 (enforcement) |
-| **Total accidents** | 9,769 (e-scooter, all party types) |
-| **Total people involved** | 19,613 |
-| **Data sources** | CBS crash records · Tel Aviv Municipality surveys · Tel Aviv Police enforcement · Populus GIS trip data |
-| **Tool** | Power BI Desktop (54-table semantic model) · Python · QGIS |
-
----
-
-## Key findings
-
-### Helmet law impact (2021)
-- CBS crash records show helmet rate rising from **~52% (pre-law, 2018–2020)** to **~70% (post-law, 2021–2024)** among known-status riders
-- Tel Aviv Municipality surveys show "always wear helmet" rising from **22% (2019)** to **52% (2022)**
-- Police enforcement fines for riding without a helmet dropped **70%** between 2020 and 2021 (from 3,593 to 1,091 tickets)
-- All three independent sources converge on the same timeline — the law caused genuine behavioural change
-
-### Solo crash underreporting
-- CBS solo crash rate: **~8–12%** of recorded Tel Aviv e-scooter accidents
-- Tel Aviv rider survey solo rate: **69% (2021)** and **77% (2022)**
-- Projection: CBS captures only **~5% of real solo crash events** — approximately 1 in 20
-- Estimated unreported solo crashes: **~680–1,040 per year** (2021–2022 survey period)
-
-### Crash dynamics
-- **E-scooter passengers** face 3× higher severe injury risk (~24% severity rate) vs drivers (~8%), despite being only 1.3% of those involved
-- **Overturning** increases severe injury likelihood by **4.77×** (Key Influencers AI visual)
-- **Helmets reduce severe injury risk by 1.81×** overall; protective effect for males: 1.80× (p=0.002, statistically proven)
-- **Age 30–44**: strongest protective effect from helmets (RR 2.90×)
+The core shift: Phase 3 described *what happened* in CBS crash records. Phase 4 asks *why*, by cross-validating CBS patterns against independent sources that capture different populations and different moments — and by producing focused analytical outputs on specific topics.
 
 ---
 
 ## Data sources
 
 ### 1. CBS Israel — crash microdata
-Central Bureau of Statistics road accident records, vehicle_type=21 (e-scooter), Tel Aviv–Yafo.
-2013–2025. ~80% of rider records have unknown helmet status (systematic recording gap).
+Police-reported road accidents with casualties. Tables: `markers_hebrew`, `involved_hebrew`, `vehicles_hebrew`, linked by accident ID.
+Scope: Tel Aviv–Yafo, all micromobility modes, 2013–2025.
 Available: [data.gov.il](https://data.gov.il/dataset/road_accidents_with_casualties_israel)
 
 ### 2. Tel Aviv Municipality surveys (2019–2022)
 Annual surveys of shared e-scooter subscribers, distributed via operators (Bird, Lime, Wind, Dott).
-N: 2021 ≈2,000; 2022 = 1,875. Covers shared-service riders only — private owners excluded.
-Source: Tel Aviv Transport and Parking Authority (רשות התחבורה והחנייה תל אביב-יפו)
-Hebrew citation: *סקר קורקינים חשמליים, דצמבר 2021 and 2022. מוגש עבור הרשות לתחבורה ולחנייה*
+Total N: ~6,000 across four years. 2021: N = 2,000; 2022: N = 1,875.
+Covers **shared-service riders only** — private owners excluded.
+Source: Tel Aviv Transport and Parking Authority.
+Hebrew: *סקר קורקינים חשמליים, דצמבר 2021 and 2022. מוגש עבור הרשות לתחבורה ולחנייה*
+Loaded as `survey_` tables in the data model.
 
 ### 3. Tel Aviv Police enforcement records (2019–2024)
-Ticket-level "no helmet" fines and total traffic violations.
-Tables: `enforcement_helmet` (granular, ticket_count field) · `enforcement_fines` (summary)
-Scope: Tel Aviv city only. Not nationally representative.
-**Note**: use `ticket_count` field, not `fine_count` — some events generate 2 tickets.
+Ticket-level "no helmet" fines and total traffic violations. 7,561 fines total.
+Tables: `enforcement_helmet` (granular, `ticket_count` field) · `enforcement_fines` (summary).
+Scope: Tel Aviv city only. Use `ticket_count` field — some events generate 2 tickets.
+Loaded as `enforcement_` tables in the data model.
 
-### 4. Populus GIS trip data
-Segment-level shared e-scooter trip counts (shared operators only, not private).
-`DailyTrips_PopulusTA.csv`. Used for spatial risk analysis only — not as trip-count denominator
-(segment structure causes double-counting of individual trips).
+### 4. Field observations (2024–2025)
+Direct counts of e-scooter riders at traffic hotspots in Tel Aviv.
+N = 1,777 riders, 100 % observed. Captures the **general riding population** (not crash victims or subscribers).
+Used for helmet compliance comparison against CBS crash records.
+> Note: CBS captures crash victims (biased toward severe events); surveys capture subscribers; observations capture general population. Comparing figures across sources requires matching populations carefully.
+
+### Spatial layers (coming)
+- Bike lanes layer (OpenDataTLV)
+- Road type classification
 
 ---
 
-## Data model structure (54 tables)
+## Current outputs
 
-| Prefix | Tables | Purpose |
+### Power BI dashboard
+`escooter_TA_new_0323.pbix` — 54-table semantic model, Tel Aviv only.
+Open with Power BI Desktop (free). All sources embedded.
+
+### Standalone reports
+
+| File | Topic | Key finding |
 |---|---|---|
-| `fact_` | `fact_Accidents`, `fact_Involved`, `fact_Vehicles` | Core CBS crash records |
-| `dim_` | Calendar, VehicleType, Quarters, Streets | Dimension/lookup |
-| `&` | 15 bridge/helper tables | Party count pipeline, matrix filters |
-| `_Measures` | Single measures table | All ~180 DAX measures |
-| `survey_` | helmets, crashes, neighborhoods | Tel Aviv Municipality survey data |
-| `enforcement_` | helmet, fines | Tel Aviv Police enforcement |
-
-### Critical party count pipeline (do not modify)
-`&BaseAccidentPartySummary → &MultiPartyIDs → &AccidentMatrixSource → &MatrixAccidentIDs → fact_Accidents[PartyCount]`
-
-Result: **583 solo · 8,882 two-party · 304 multi-party** = 9,769 total ✓
+| `reports/helmet_analysis_FINAL_0324.docx` | Helmet law impact (2019–2025) | Mandatory helmet law (Jan 2019) achieved ~35 pp increase in compliance; enforcement dropped 87% in 2021 but compliance held — the legal norm endured |
+| `reports/Solo_2Party_Analysis_FINAL.docx` | Solo vs two-party crash dynamics | Detailed party-level breakdown of crash interactions; severity patterns by counterpart type |
 
 ---
 
-## Research outputs
+## Key findings so far
 
-### Helmet Law Impact Analysis
-Multi-section Word report covering CBS crash data (2013–2025), Tel Aviv Municipality surveys (2019–2022), and Tel Aviv Police enforcement records (2019–2024).
+### Helmet law impact
+- CBS crash records: helmet rate rose from **25 % (2018 baseline)** to **~60 % (2019–2024)** among known-status riders
+- Tel Aviv surveys: "always wear helmet" rose from **22 % (2019)** to **52 % (2022)**
+- Police enforcement fines dropped **87 %** in 2021 (COVID + genuine compliance improvement) and never recovered — compliance remained high regardless
+- All three independent sources converge on the same timeline: the January 2019 law caused genuine behavioural change
+- Helmets reduce severe injury risk by **2.28× overall** (z = 6.38, p < 0.001); male RR 2.40×, female RR 1.78× — both statistically confirmed
+- 2024–2025 CBS helmet coverage collapsed to < 15 % (down from 37.5 % in 2021) — current trends cannot be assessed from CBS alone
 
-File: `reports/helmet_analysis_v4_final.docx`
+### E-scooter passengers
+- Only 2.6 % of all e-scooter users in crashes, but **24.3 % severe/fatal injury rate** — 3× higher than drivers (7.8 %)
+- Helmeted passengers still show higher severity than non-helmeted drivers — risk elevation is independent of helmet use and reflects tandem riding itself
 
-Sections:
-1. Methodological framework — source matching and population distinctions
-2. CBS crash data — annual tables, severity breakdown, demographics
-3. Tel Aviv Municipality survey data — compliance frequency, operator helmet usage, demographics
-4. Enforcement data — ticket trends, demographic breakdown
-5. Cross-source synthesis — convergent evidence, CBS vs hospital comparison
+### Crash dynamics
+- E-scooters are **dominant in micromobility crashes since 2020**; highest count in 2025 (50 % of micromobility crashes); highest overall severity (9.8 %) vs e-bikes (8.3 %) and bikes (6 %)
+- **Two distinct KPIs**: volume concentrates mid-block, daytime, summer; severity peaks at uncontrolled crossings, poor lighting, night, Saturday/holidays
+- Car is the main counterpart in ~43 % of e-scooter crashes; pedestrians ~11 % overall, rising to 14 % in 2024
 
-### Solo Crash Underreporting Study
-Analysis comparing CBS recorded solo rates (~8–12%) to Tel Aviv rider survey rates (69–77%), producing crash projection and CBS capture rate estimate (~5%).
+---
 
-Files: `reports/ES_Solo_Underreporting_Report.docx` · `reports/Solo_Analysis_CONDENSED_FINAL.docx`
+## Data model
+
+54 tables, strict prefix structure:
+
+| Prefix | Purpose |
+|---|---|
+| `fact_` | Core CBS data — `fact_Accidents`, `fact_Involved`, `fact_Vehicles` |
+| `dim_` | Dimension/lookup — calendar, vehicle type, quarters, streets |
+| `&` | 15 bridge/helper tables — party count pipeline, matrix filters |
+| `_Measures` | All DAX measures (single table) |
+| `survey_` | Tel Aviv Municipality rider survey data |
+| `enforcement_` | Tel Aviv Police enforcement records |
+
+### Party count pipeline (do not modify)
+`&BaseAccidentPartySummary → &MultiPartyIDs → &AccidentMatrixSource → &MatrixAccidentIDs → fact_Accidents[PartyCount]`
 
 ---
 
 ## Files in this repo
 
 ```
-Escooter_TLV_Safety_Phase4/
-├── README.md                               ← this file
-├── CHANGELOG.md                            ← version history with all data corrections
-│
-├── pbix/
-│   └── escooter_TA_new_0323.pbix           ← current active report
-│   └── escooter_TA_new_0307.pbix           ← prior version
-│
-├── reports/
-│   └── helmet_analysis_v4_final.docx       ← helmet law impact (complete)
-│   └── ES_Solo_Underreporting_Report.docx  ← solo crash underreporting
-│   └── Solo_Analysis_CONDENSED_FINAL.docx  ← condensed solo vs two-party analysis
-│
-├── data/
-│   └── Solo_vs_TwoParty_FINAL.csv
-│   └── Rider_Demographics_Solo_vs_TwoParty.csv
-│   └── gender_analysis_summary.txt
-│   └── final_detailed_conclusion.txt       ← full statistical test specifications
-│
-└── docs/
-    └── raw_data_change_log.md              ← all structural model changes with DAX verification
-    └── dax_query_patterns.md               ← reusable DAX patterns (geographic filter, joins)
-    └── methodology_notes.md                ← key analytical decisions and caveats
-    └── PROJECT_CONTEXT.md                  ← quick-start context for new sessions
-    └── handover_log_v5.md                  ← session handover log (latest)
+├── README.md                              ← this file
+├── escooter_TA_new_0323.pbix              ← current Power BI report (all sources embedded)
+└── reports/
+    ├── helmet_analysis_FINAL_0324.docx    ← Helmet law impact: CBS + surveys + enforcement + observations
+    └── Solo_2Party_Analysis_FINAL.docx    ← Solo vs two-party crash dynamics
 ```
-
----
-
-## Key technical notes
-
-**DAX geographic filter for Tel Aviv:**
-```dax
-FILTER(ALL(fact_Accidents), NOT(ISBLANK(fact_Accidents[TA Quarter (1-9)])))
-```
-Note: column name includes parentheses — exact match required.
-
-**Join key between accident and involved tables:** `provider_and_id`
-
-**Vehicle type filter for e-scooters:** `vehicle_type = 21` — always apply this filter.
-
-**Rider-level severity:** `fact_Involved[IsSeverelyInjured]` — distinct from crash-level severity.
-
----
-
-## Known data quality issues
-
-| Issue | Detail |
-|---|---|
-| 2025 CBS coverage | Only 8.7% of 2025 e-scooter records have known helmet status — critically low, uninterpretable for helmet compliance |
-| 2024 CBS coverage | 8.8% known status — indicative only |
-| Solo crash underreporting | CBS captures ~5% of real solo events — solo rates in CBS are not face-value estimates |
-| Populus trip data | Shared operators only; segment structure double-counts trips — not suitable as trip denominator |
 
 ---
 
@@ -257,11 +124,12 @@ Note: column name includes parentheses — exact match required.
 ```
 Phase 1  →  Phase 2  →  Phase 3a/3b  →  Phase 4
 National     Tel Aviv     Tel Aviv         Tel Aviv
-all modes    micromobility  e-scooters     full integration
+all modes    micromobility  e-scooters     e-scooters
+                                          multi-source
                                           (this repo)
 ```
 
-← **Phase 3**: [Road_Accidents_in_Israel-2013-2024](../Road_Accidents_in_Israel-2013-2024)
+← **Phase 3**: [Escooter-Accidents-TelAviv-Israel-CBS-2013-2025](https://github.com/NinaGarmash/Escooter-Accidents-TelAviv-Israel-CBS-2013-2025)
 
 ---
 
@@ -270,5 +138,3 @@ all modes    micromobility  e-scooters     full integration
 **Nina Garmash, PhD**
 ANYWAY Project (DATA FOR CHANGE) · HIT (Holon Institute of Technology)
 [LinkedIn](https://www.linkedin.com/in/nina-garmash) · [Portfolio](https://ninagarmash.wixsite.com/data-showcase)
-
-

@@ -1,5 +1,4 @@
 # Power BI files (large, binary)
-*.pbix
 
 # Raw data files
 Raw Data/
