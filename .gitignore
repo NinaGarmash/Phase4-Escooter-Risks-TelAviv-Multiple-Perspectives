@@ -1,0 +1,12 @@
+# Старые ручные бэкапы — Git заменяет их
+pbi_backups/
+
+# Временные файлы
+*.bak
+~$*
+*.tmp
+Thumbs.db
+.DS_Store
+
+# Power BI временные файлы
+*.pbix.lock
