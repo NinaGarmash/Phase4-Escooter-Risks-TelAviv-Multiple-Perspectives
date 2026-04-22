@@ -1,0 +1,12 @@
+variable_a,variable_b,years_available,min_rho,max_rho,mean_rho,signs,interpretation
+Daily Trips,ES Crashes,6,0.640,0.886,0.771,positive,stable high association
+Daily Trips,Crashes/km2,6,0.707,0.893,0.843,positive,stable high association
+ES Crashes,Crashes/km2,6,0.893,0.929,0.912,positive,stable high association
+Crashes/km2,Crashes/10M Trips,6,-0.399,-0.082,-0.307,negative,lower or moderate association
+Crashes/km2,Crashes/10km BP,6,0.731,0.930,0.847,positive,stable high association
+Crashes/10km Street,Crashes/10km BP,6,0.508,0.874,0.709,positive,stable high association
+Severity %,ES Crashes,6,-0.067,0.112,0.036,mixed,unstable over time
+Severity %,Crashes/km2,6,-0.336,0.291,0.008,mixed,unstable over time
+BP Share %,Crashes/km2,6,-0.925,-0.764,-0.824,negative,stable high association
+BP Share %,Crashes/10M Trips,6,0.127,0.804,0.447,positive,stable high association
+BP km/km2,Crashes/km2,6,-0.254,0.196,0.075,mixed,unstable over time

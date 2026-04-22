@@ -1,0 +1,67 @@
+year,variable_a,variable_b,rho,n,strength
+2020,Daily Trips,ES Crashes,0.776,15,Moderate
+2020,Daily Trips,Crashes/km2,0.829,15,Strong
+2020,ES Crashes,Crashes/km2,0.914,15,Strong
+2020,Crashes/km2,Crashes/10M Trips,-0.245,11,None
+2020,Crashes/km2,Crashes/10km BP,0.930,12,Strong
+2020,Crashes/10km Street,Crashes/10km BP,0.769,12,Moderate
+2020,Severity %,ES Crashes,0.096,11,None
+2020,Severity %,Crashes/km2,0.098,11,None
+2020,BP Share %,Crashes/km2,-0.925,15,Strong
+2020,BP Share %,Crashes/10M Trips,0.373,11,Weak
+2020,BP km/km2,Crashes/km2,-0.254,15,None
+2021,Daily Trips,ES Crashes,0.886,15,Strong
+2021,Daily Trips,Crashes/km2,0.889,15,Strong
+2021,ES Crashes,Crashes/km2,0.929,15,Strong
+2021,Crashes/km2,Crashes/10M Trips,-0.385,12,Weak
+2021,Crashes/km2,Crashes/10km BP,0.874,13,Strong
+2021,Crashes/10km Street,Crashes/10km BP,0.874,13,Strong
+2021,Severity %,ES Crashes,0.095,12,None
+2021,Severity %,Crashes/km2,0.291,12,None
+2021,BP Share %,Crashes/km2,-0.882,15,Strong
+2021,BP Share %,Crashes/10M Trips,0.552,12,Moderate
+2021,BP km/km2,Crashes/km2,0.189,15,None
+2022,Daily Trips,ES Crashes,0.804,15,Strong
+2022,Daily Trips,Crashes/km2,0.886,15,Strong
+2022,ES Crashes,Crashes/km2,0.893,15,Strong
+2022,Crashes/km2,Crashes/10M Trips,-0.350,12,Weak
+2022,Crashes/km2,Crashes/10km BP,0.863,13,Strong
+2022,Crashes/10km Street,Crashes/10km BP,0.654,13,Moderate
+2022,Severity %,ES Crashes,-0.063,12,None
+2022,Severity %,Crashes/km2,0.021,12,None
+2022,BP Share %,Crashes/km2,-0.793,15,Moderate
+2022,BP Share %,Crashes/10M Trips,0.804,12,Strong
+2022,BP km/km2,Crashes/km2,0.196,15,None
+2023,Daily Trips,ES Crashes,0.640,15,Moderate
+2023,Daily Trips,Crashes/km2,0.707,15,Moderate
+2023,ES Crashes,Crashes/km2,0.909,15,Strong
+2023,Crashes/km2,Crashes/10M Trips,-0.082,11,None
+2023,Crashes/km2,Crashes/10km BP,0.864,14,Strong
+2023,Crashes/10km Street,Crashes/10km BP,0.763,14,Moderate
+2023,Severity %,ES Crashes,0.043,11,None
+2023,Severity %,Crashes/km2,-0.005,11,None
+2023,BP Share %,Crashes/km2,-0.764,15,Moderate
+2023,BP Share %,Crashes/10M Trips,0.127,11,None
+2023,BP km/km2,Crashes/km2,0.039,15,None
+2024,Daily Trips,ES Crashes,0.731,15,Moderate
+2024,Daily Trips,Crashes/km2,0.854,15,Strong
+2024,ES Crashes,Crashes/km2,0.916,15,Strong
+2024,Crashes/km2,Crashes/10M Trips,-0.382,11,Weak
+2024,Crashes/km2,Crashes/10km BP,0.820,14,Strong
+2024,Crashes/10km Street,Crashes/10km BP,0.508,14,Moderate
+2024,Severity %,ES Crashes,0.112,11,None
+2024,Severity %,Crashes/km2,-0.018,11,None
+2024,BP Share %,Crashes/km2,-0.796,15,Moderate
+2024,BP Share %,Crashes/10M Trips,0.473,11,Weak
+2024,BP km/km2,Crashes/km2,0.082,15,None
+2025,Daily Trips,ES Crashes,0.789,15,Moderate
+2025,Daily Trips,Crashes/km2,0.893,15,Strong
+2025,ES Crashes,Crashes/km2,0.909,15,Strong
+2025,Crashes/km2,Crashes/10M Trips,-0.399,12,Weak
+2025,Crashes/km2,Crashes/10km BP,0.731,13,Moderate
+2025,Crashes/10km Street,Crashes/10km BP,0.687,13,Moderate
+2025,Severity %,ES Crashes,-0.067,12,None
+2025,Severity %,Crashes/km2,-0.336,12,Weak
+2025,BP Share %,Crashes/km2,-0.786,15,Moderate
+2025,BP Share %,Crashes/10M Trips,0.350,12,Weak
+2025,BP km/km2,Crashes/km2,0.196,15,None

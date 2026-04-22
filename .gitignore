@@ -1,12 +1,28 @@
 # Старые ручные бэкапы — Git заменяет их
 pbi_backups/
 
-# Временные файлы
-*.bak
-~$*
-*.tmp
-Thumbs.db
-.DS_Store
+# Большие папки с сырыми данными
+Raw Data/
+deprecated/
+
+# Видео и большие медиафайлы
+*.mp4
+*.mp3
+
+# Большие PDF и PPTX
+*.pdf
+*.pptx
+
+# QGIS файлы
+*.qmd
+*.qgz
 
 # Power BI временные файлы
 *.pbix.lock
+*.bak
+
+# Временные файлы системы
+*.tmp
+~$*
+Thumbs.db
+.DS_Store

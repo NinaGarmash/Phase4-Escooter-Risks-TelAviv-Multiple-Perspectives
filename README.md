@@ -1,78 +1,108 @@
-# E-Scooter Accident Analytics Dashboard - Tel Aviv
+# E-Scooter Risks in Tel Aviv from Multiple Perspectives
 
-An interactive Power BI dashboard analyzing electric scooter crashes, injuries, and road safety data in Tel Aviv-Jaffo, Israel.
+**E-Scooter Safety Analytics · Phase 4 of 4** ⏳ In progress
+Part of a longitudinal multi-phase research project on micro-mobility safety in Israel.
 
-## Overview
+← Previous phase: [Phase 3 — CBS crash analytics](https://github.com/NinaGarmash/Phase3-Escooter-Accidents-TelAviv-CBS-2013-2025)
 
-This project provides comprehensive analytics on micromobility accidents with a focus on e-scooters. The dashboard enables exploration of accident patterns by:
+---
 
-- **Location** - Interactive maps with Tel Aviv neighborhood boundaries
-- **Time** - Trends by year, month, day of week, and hour
-- **Severity** - Light, moderate, and severe injury classifications
-- **Demographics** - Age groups and gender analysis
-- **Conditions** - Weather, lighting, road surface, and traffic factors
-- **Vehicle Types** - E-scooters, bicycles, e-bikes, and mobility scooters
+## What makes Phase 4 different
 
-## Getting Started
+| | Phase 3 | Phase 4 |
+|---|---|---|
+| **CBS scope** | Tel Aviv + national benchmarking | **Tel Aviv only** — no comparison with Israel totals |
+| **Data sources** | CBS crash data + OpenDataTLV | CBS + surveys + enforcement + field observations |
+| **Spatial layers** | Quarters + streets | Quarters + streets + **bike lanes and road types** (coming) |
+| **Outputs** | Single integrated dashboard | Dashboard + **standalone reports on narrow topics** |
 
-### Requirements
+---
 
-- Microsoft Power BI Desktop (free download from Microsoft)
+## Data sources
 
-### Opening the Dashboard
+### 1. CBS Israel — crash microdata
+Police-reported road accidents with casualties. Tables: `markers_hebrew`, `involved_hebrew`, `vehicles_hebrew`, linked by accident ID.
+Scope: Tel Aviv–Yafo, all micromobility modes, 2013–2025.
+Available: [data.gov.il](https://data.gov.il/dataset/road_accidents_with_casualties_israel)
 
-1. Download and install [Power BI Desktop](https://powerbi.microsoft.com/desktop/)
-2. Open `escooter_TA_new.pbix`
-3. The dashboard will load with all data embedded
+### 2. Tel Aviv Municipality surveys (2019–2022)
+Annual surveys of shared e-scooter subscribers, distributed via operators (Bird, Lime, Wind, Dott).
+Total N: ~6,000 across four years. 2021: N = 2,000; 2022: N = 1,875.
+Covers **shared-service riders only** — private owners excluded.
 
-## Data Sources
+### 3. Tel Aviv Police enforcement records (2019–2024)
+Ticket-level "no helmet" fines and total traffic violations. 7,561 fines total.
 
-The dashboard uses three main datasets located in `Raw Data/`:
+### 4. Field observations (2024–2025)
+Direct counts of e-scooter riders at traffic hotspots in Tel Aviv.
+N = 1,777 riders, 100% observed.
 
-| File | Description | Records |
-|------|-------------|---------|
-| `markers_hebrew(3).csv` | Accident incidents with location and conditions | ~774K |
-| `involved_hebrew(3).csv` | People and vehicles involved with injury data | ~1.7M |
-| `vehicles_hebrew(3).csv` | Vehicle details and classifications | ~1.3M |
+---
 
-**Geographic Data:** `tlv_quarters_new.geojson` provides Tel Aviv neighborhood boundaries for map visualizations.
+## Current outputs
 
-**Data Coverage:** 2013-2025
+### Power BI dashboard
+`escooter_TA_phase4.pbix` — 54-table semantic model, Tel Aviv only.
+Open with Power BI Desktop (free). All sources embedded.
 
-## Project Structure
+### Standalone reports
+
+| File | Topic |
+|---|---|
+| `REPORTS/HELMET_USE_ES.docx` | Helmet law impact (2019–2025) |
+| `REPORTS/QUARTERS_TA.docx` | Quarter-level spatial analysis |
+| `REPORTS/Solo_2Party_Analysis_FINAL.docx` | Solo vs two-party crash dynamics |
+
+---
+
+## Key findings so far
+
+### Helmet law impact
+- CBS crash records: helmet rate rose from **25% (2018)** to **~60% (2019–2024)**
+- Tel Aviv surveys: "always wear helmet" rose from **22% (2019)** to **52% (2022)**
+- Helmets reduce severe injury risk by **2.28× overall** (p < 0.001)
+
+### E-scooter passengers
+- Only 2.6% of all e-scooter users in crashes, but **24.3% severe/fatal injury rate** — 3× higher than drivers
+
+### Crash dynamics
+- E-scooters dominant in micromobility crashes since 2020
+- Car is the main counterpart in ~43% of e-scooter crashes
+
+---
+
+## Data model
+
+54 tables, strict prefix structure:
+
+| Prefix | Purpose |
+|---|---|
+| `fact_` | Core CBS data |
+| `dim_` | Dimension/lookup tables |
+| `&` | Bridge/helper tables |
+| `_Measures` | All DAX measures |
+| `survey_` | Tel Aviv Municipality rider survey data |
+| `enforcement_` | Tel Aviv Police enforcement records |
+
+---
+
+## Repository structure
 
 ```
-escooter_TA_new.pbix              # Main Power BI dashboard
-Raw Data/                         # Source CSV files (Hebrew)
-tlv_quarters_new.geojson          # Tel Aviv neighborhood boundaries
-pbi_backups/                      # Dashboard version history
-E-Scooter Crashes in TA Report (live PBI).pptx  # Presentation
-escooter_TA_dec5_datadct.pdf      # Data dictionary
+├── README.md
+├── escooter_TA_phase3.1.pbix     ← Phase 3.1 dashboard
+├── escooter_TA_phase3.2.pbix     ← Phase 3.2 dashboard (last working)
+├── escooter_TA_phase4.pbix       ← Phase 4 dashboard (current)
+└── REPORTS/
+    ├── HELMET_USE_ES.docx
+    ├── QUARTERS_TA.docx
+    └── Solo_2Party_Analysis_FINAL.docx
 ```
 
-## Key Metrics
+---
 
-The dashboard calculates:
+## Author
 
-- Total accidents by vehicle type
-- Year-over-year (YoY) change analysis
-- Year-to-date (YTD) comparisons
-- Daily averages and trends
-- Injury severity distributions
-- Geographic hotspots by neighborhood
-
-## Documentation
-
-- **Data Dictionary:** `escooter_TA_dec5_datadct.pdf` - Detailed field definitions
-- **Presentation:** `E-Scooter Crashes in TA Report (live PBI).pptx`
-- **Demo Videos:** `escooter_demo.mp4`, `Escooter_demo_Technion.mp4`
-
-## Notes
-
-- All data labels are in Hebrew
-- Coordinates use both Israeli grid (x,y) and WGS84 (lat/long) formats
-- Dashboard versions are manually tracked in `pbi_backups/`
-
-## Related Resources
-
-- [ANYWAY Road Safety Project](https://www.anyway.co.il/) - Open-source road safety data platform for Israel
+**Nina Garmash, PhD**
+ANYWAY Project (DATA FOR CHANGE) · HIT (Holon Institute of Technology)
+[LinkedIn](https://www.linkedin.com/in/nina-garmash) · [Portfolio](https://ninagarmash.wixsite.com/data-showcase)

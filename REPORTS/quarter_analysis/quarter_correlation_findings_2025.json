@@ -1,0 +1,155 @@
+{
+  "rows": 15,
+  "variables": [
+    "Area km2",
+    "Street km",
+    "Daily Trips",
+    "VKT km",
+    "Daily Trips/km2",
+    "Street km/km2",
+    "ES Crashes",
+    "Cost M NIS",
+    "Crashes/km2",
+    "Crashes/km Street",
+    "Crashes/10km BP",
+    "Crashes/10M Trips",
+    "Severity %",
+    "BP km",
+    "BP km/km2",
+    "BP Share %"
+  ],
+  "strongestPositive": [
+    {
+      "a": "Street km",
+      "b": "VKT km",
+      "rho": 0.9892857142857143,
+      "abs": 0.9892857142857143,
+      "n": 15
+    },
+    {
+      "a": "Daily Trips",
+      "b": "VKT km",
+      "rho": 0.9857142857142858,
+      "abs": 0.9857142857142858,
+      "n": 15
+    },
+    {
+      "a": "Street km",
+      "b": "Daily Trips",
+      "rho": 0.9678571428571429,
+      "abs": 0.9678571428571429,
+      "n": 15
+    },
+    {
+      "a": "Street km",
+      "b": "Daily Trips/km2",
+      "rho": 0.9678571428571429,
+      "abs": 0.9678571428571429,
+      "n": 15
+    },
+    {
+      "a": "VKT km",
+      "b": "Daily Trips/km2",
+      "rho": 0.9678571428571429,
+      "abs": 0.9678571428571429,
+      "n": 15
+    }
+  ],
+  "strongestNegative": [
+    {
+      "a": "Street km/km2",
+      "b": "BP Share %",
+      "rho": -0.8428571428571429,
+      "abs": 0.8428571428571429,
+      "n": 15
+    },
+    {
+      "a": "Area km2",
+      "b": "Street km/km2",
+      "rho": -0.8178571428571428,
+      "abs": 0.8178571428571428,
+      "n": 15
+    },
+    {
+      "a": "Daily Trips/km2",
+      "b": "BP Share %",
+      "rho": -0.8107142857142857,
+      "abs": 0.8107142857142857,
+      "n": 15
+    },
+    {
+      "a": "Crashes/km2",
+      "b": "BP Share %",
+      "rho": -0.7857142857142857,
+      "abs": 0.7857142857142857,
+      "n": 15
+    },
+    {
+      "a": "Street km",
+      "b": "Crashes/10M Trips",
+      "rho": -0.7482517482517482,
+      "abs": 0.7482517482517482,
+      "n": 12
+    }
+  ],
+  "moderateIndependent": [
+    {
+      "a": "VKT km",
+      "b": "Cost M NIS",
+      "rho": 0.55,
+      "abs": 0.55,
+      "n": 15
+    },
+    {
+      "a": "Crashes/km Street",
+      "b": "Crashes/10M Trips",
+      "rho": 0.5454545454545454,
+      "abs": 0.5454545454545454,
+      "n": 12
+    },
+    {
+      "a": "VKT km",
+      "b": "Crashes/10km BP",
+      "rho": 0.5439560439560439,
+      "abs": 0.5439560439560439,
+      "n": 13
+    },
+    {
+      "a": "Cost M NIS",
+      "b": "Crashes/10km BP",
+      "rho": 0.5439560439560439,
+      "abs": 0.5439560439560439,
+      "n": 13
+    },
+    {
+      "a": "Daily Trips/km2",
+      "b": "Cost M NIS",
+      "rho": 0.5428571428571428,
+      "abs": 0.5428571428571428,
+      "n": 15
+    },
+    {
+      "a": "Street km",
+      "b": "Cost M NIS",
+      "rho": 0.525,
+      "abs": 0.525,
+      "n": 15
+    }
+  ],
+  "spotlight": {
+    "bpShareVsCrashDensity": -0.7857142857142857,
+    "bpShareVsBpRisk": -0.6593406593406593,
+    "tripsVsVkt": 0.9857142857142858,
+    "tripsVsCrashes": 0.7889100279867562,
+    "tripsVsCrashDensity": 0.8928571428571429,
+    "crashesVsCost": 0.7835432931024926,
+    "crashesVsCrashDensity": 0.9087671070686444,
+    "crashDensityVsBpRisk": 0.7307692307692307,
+    "severityVsCrashes": -0.06655001449214289,
+    "severityVsTrips": -0.20279720279720279,
+    "severityVsCrashDensity": -0.3356643356643357,
+    "severityVsCost": 0.5174825174825175,
+    "exposureAdjVsDensity": -0.3986013986013986
+  },
+  "vktCoverage": 15
+}

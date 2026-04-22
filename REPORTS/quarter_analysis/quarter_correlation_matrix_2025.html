@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Quarter Correlation Matrix 2025</title>
+  <style>
+    :root {
+      --bg: #f4f1ea;
+      --panel: #fffdf8;
+      --grid: #d8d2c7;
+      --text: #2c261f;
+      --muted: #6d655c;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at top left, rgba(198, 214, 237, 0.55), transparent 30%),
+        radial-gradient(circle at bottom right, rgba(238, 206, 188, 0.5), transparent 35%),
+        var(--bg);
+      color: var(--text);
+    }
+    .frame {
+      width: 1480px;
+      margin: 0 auto;
+      padding: 34px 36px 30px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+    }
+    .sub {
+      margin-bottom: 18px;
+      font-size: 16px;
+      color: var(--muted);
+    }
+    .panel {
+      background: rgba(255, 253, 248, 0.9);
+      border: 1px solid rgba(102, 90, 76, 0.18);
+      border-radius: 18px;
+      box-shadow: 0 16px 40px rgba(80, 64, 49, 0.12);
+      overflow: hidden;
+      padding: 18px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+      font-size: 13px;
+    }
+    th, td {
+      border: 1px solid var(--grid);
+      text-align: center;
+      padding: 7px 4px;
+      height: 42px;
+    }
+    th {
+      background: #f5efe5;
+      font-weight: 700;
+    }
+    th.rowhead {
+      text-align: left;
+      width: 190px;
+      padding-left: 10px;
+    }
+    td.diag {
+      background: #16324f;
+      color: white;
+      font-weight: 700;
+    }
+    .legend {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .bar {
+      width: 280px;
+      height: 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(80, 64, 49, 0.18);
+      background: linear-gradient(90deg, hsl(220 68% 54%), #f7f7f7 50%, hsl(8 68% 54%));
+    }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <h1>Full Spearman Correlation Matrix, 2025 Quarter Cross-Section</h1>
+    <div class="sub">15 Tel Aviv quarters. Positive relationships are red, negative relationships are blue. Variables are ordered by related clusters so cross-correlated classes are easier to spot. Values come from the verified 2025 Power BI Q15 quarter table, with the same low-n suppression used in the report for severity, bike-path rate, and trip-based rate metrics.</div>
+    <div class="panel">
+      <table>
+        <thead>
+          <tr>
+            <th class="rowhead">Variable</th>
+            <th>Area km2</th><th>Street km</th><th>Daily Trips</th><th>VKT km</th><th>Daily Trips/km2</th><th>Street km/km2</th><th>ES Crashes</th><th>Cost M NIS</th><th>Crashes/km2</th><th>Crashes/km Street</th><th>Crashes/10km BP</th><th>Crashes/10M Trips</th><th>Severity %</th><th>BP km</th><th>BP km/km2</th><th>BP Share %</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th class="rowhead">Area km2</th><td class="diag">1.000</td><td style="background:hsl(220 68% 78%)">-0.429</td><td style="background:hsl(220 68% 80.25%)">-0.375</td><td style="background:hsl(220 68% 78.45%)">-0.418</td><td style="background:hsl(220 68% 71.55%)">-0.582</td><td style="background:hsl(220 68% 61.65%)">-0.818</td><td style="background:hsl(220 68% 85.85687106874171%)">-0.242</td><td style="background:hsl(8 68% 91.65%)">0.104</td><td style="background:hsl(220 68% 74.1%)">-0.521</td><td style="background:hsl(220 68% 95.7%)">-0.007</td><td style="background:hsl(220 68% 84.46153846153845%)">-0.275</td><td style="background:hsl(8 68% 83.37062937062937%)">0.301</td><td style="background:hsl(8 68% 68.3916083916084%)">0.657</td><td style="background:hsl(8 68% 69.3%)">0.636</td><td style="background:hsl(220 68% 77.90883996100995%)">-0.431</td><td style="background:hsl(8 68% 64.95%)">0.739</td></tr><tr><th class="rowhead">Street km</th><td style="background:hsl(220 68% 78%)">-0.429</td><td class="diag">1.000</td><td style="background:hsl(8 68% 55.35%)">0.968</td><td style="background:hsl(8 68% 54.449999999999996%)">0.989</td><td style="background:hsl(8 68% 55.35%)">0.968</td><td style="background:hsl(8 68% 60.45%)">0.846</td><td style="background:hsl(8 68% 66.32195609002203%)">0.707</td><td style="background:hsl(8 68% 73.95%)">0.525</td><td style="background:hsl(8 68% 59.4%)">0.871</td><td style="background:hsl(8 68% 83.1%)">0.307</td><td style="background:hsl(8 68% 74.53846153846155%)">0.511</td><td style="background:hsl(220 68% 64.57342657342657%)">-0.748</td><td style="background:hsl(220 68% 87.18881118881119%)">-0.210</td><td style="background:hsl(220 68% 93.45%)">-0.061</td><td style="background:hsl(8 68% 81.36192444977983%)">0.349</td><td style="background:hsl(220 68% 66.9%)">-0.693</td></tr><tr><th class="rowhead">Daily Trips</th><td style="background:hsl(220 68% 80.25%)">-0.375</td><td style="background:hsl(8 68% 55.35%)">0.968</td><td class="diag">1.000</td><td style="background:hsl(8 68% 54.599999999999994%)">0.986</td><td style="background:hsl(8 68% 55.949999999999996%)">0.954</td><td style="background:hsl(8 68% 62.7%)">0.793</td><td style="background:hsl(8 68% 62.86577882455624%)">0.789</td><td style="background:hsl(8 68% 70.8%)">0.600</td><td style="background:hsl(8 68% 58.5%)">0.893</td><td style="background:hsl(8 68% 78.3%)">0.421</td><td style="background:hsl(8 68% 71.76923076923077%)">0.577</td><td style="background:hsl(220 68% 71.32867132867133%)">-0.587</td><td style="background:hsl(220 68% 87.48251748251748%)">-0.203</td><td style="background:hsl(8 68% 95.25%)">0.018</td><td style="background:hsl(8 68% 81.28685739567614%)">0.350</td><td style="background:hsl(220 68% 69.45%)">-0.632</td></tr><tr><th class="rowhead">VKT km</th><td style="background:hsl(220 68% 78.45%)">-0.418</td><td style="background:hsl(8 68% 54.449999999999996%)">0.989</td><td style="background:hsl(8 68% 54.599999999999994%)">0.986</td><td class="diag">1.000</td><td style="background:hsl(8 68% 55.35%)">0.968</td><td style="background:hsl(8 68% 61.35%)">0.825</td><td style="background:hsl(8 68% 64.9695388991876%)">0.739</td><td style="background:hsl(8 68% 72.9%)">0.550</td><td style="background:hsl(8 68% 59.1%)">0.879</td><td style="background:hsl(8 68% 81.6%)">0.343</td><td style="background:hsl(8 68% 73.15384615384616%)">0.544</td><td style="background:hsl(220 68% 67.21678321678321%)">-0.685</td><td style="background:hsl(220 68% 88.95104895104895%)">-0.168</td><td style="background:hsl(220 68% 94.35%)">-0.039</td><td style="background:hsl(8 68% 81.21179034157244%)">0.352</td><td style="background:hsl(220 68% 67.5%)">-0.679</td></tr><tr><th class="rowhead">Daily Trips/km2</th><td style="background:hsl(220 68% 71.55%)">-0.582</td><td style="background:hsl(8 68% 55.35%)">0.968</td><td style="background:hsl(8 68% 55.949999999999996%)">0.954</td><td style="background:hsl(8 68% 55.35%)">0.968</td><td class="diag">1.000</td><td style="background:hsl(8 68% 57.45%)">0.918</td><td style="background:hsl(8 68% 63.316584554834385%)">0.778</td><td style="background:hsl(8 68% 73.2%)">0.543</td><td style="background:hsl(8 68% 56.55%)">0.939</td><td style="background:hsl(8 68% 79.05%)">0.404</td><td style="background:hsl(8 68% 70.84615384615384%)">0.599</td><td style="background:hsl(220 68% 69.56643356643357%)">-0.629</td><td style="background:hsl(220 68% 83.95804195804196%)">-0.287</td><td style="background:hsl(220 68% 86.55%)">-0.225</td><td style="background:hsl(8 68% 81.43699150388352%)">0.347</td><td style="background:hsl(220 68% 61.95%)">-0.811</td></tr><tr><th class="rowhead">Street km/km2</th><td style="background:hsl(220 68% 61.65%)">-0.818</td><td style="background:hsl(8 68% 60.45%)">0.846</td><td style="background:hsl(8 68% 62.7%)">0.793</td><td style="background:hsl(8 68% 61.35%)">0.825</td><td style="background:hsl(8 68% 57.45%)">0.918</td><td class="diag">1.000</td><td style="background:hsl(8 68% 70.90514768118318%)">0.597</td><td style="background:hsl(8 68% 83.25%)">0.304</td><td style="background:hsl(8 68% 60.15%)">0.854</td><td style="background:hsl(8 68% 86.25%)">0.232</td><td style="background:hsl(8 68% 79.15384615384616%)">0.401</td><td style="background:hsl(220 68% 68.0979020979021%)">-0.664</td><td style="background:hsl(220 68% 73.97202797202797%)">-0.524</td><td style="background:hsl(220 68% 78.75%)">-0.411</td><td style="background:hsl(8 68% 78.28417523152841%)">0.422</td><td style="background:hsl(220 68% 60.6%)">-0.843</td></tr><tr><th class="rowhead">ES Crashes</th><td style="background:hsl(220 68% 85.85687106874171%)">-0.242</td><td style="background:hsl(8 68% 66.32195609002203%)">0.707</td><td style="background:hsl(8 68% 62.86577882455624%)">0.789</td><td style="background:hsl(8 68% 64.9695388991876%)">0.739</td><td style="background:hsl(8 68% 63.316584554834385%)">0.778</td><td style="background:hsl(8 68% 70.90514768118318%)">0.597</td><td class="diag">1.000</td><td style="background:hsl(8 68% 63.09118168969531%)">0.784</td><td style="background:hsl(8 68% 57.831781503116936%)">0.909</td><td style="background:hsl(8 68% 59.40960155909045%)">0.871</td><td style="background:hsl(8 68% 61.56805545962395%)">0.820</td><td style="background:hsl(8 68% 94.67600497484052%)">0.032</td><td style="background:hsl(220 68% 93.20489939133%)">-0.067</td><td style="background:hsl(220 68% 90.44006265990286%)">-0.132</td><td style="background:hsl(8 68% 95.58639195600502%)">0.010</td><td style="background:hsl(220 68% 70.22893908576597%)">-0.614</td></tr><tr><th class="rowhead">Cost M NIS</th><td style="background:hsl(8 68% 91.65%)">0.104</td><td style="background:hsl(8 68% 73.95%)">0.525</td><td style="background:hsl(8 68% 70.8%)">0.600</td><td style="background:hsl(8 68% 72.9%)">0.550</td><td style="background:hsl(8 68% 73.2%)">0.543</td><td style="background:hsl(8 68% 83.25%)">0.304</td><td style="background:hsl(8 68% 63.09118168969531%)">0.784</td><td class="diag">1.000</td><td style="background:hsl(8 68% 69.15%)">0.639</td><td style="background:hsl(8 68% 67.95%)">0.668</td><td style="background:hsl(8 68% 73.15384615384616%)">0.544</td><td style="background:hsl(220 68% 93.35664335664336%)">-0.063</td><td style="background:hsl(8 68% 74.26573426573427%)">0.517</td><td style="background:hsl(8 68% 93.9%)">0.050</td><td style="background:hsl(220 68% 85.26541126317187%)">-0.256</td><td style="background:hsl(220 68% 77.55%)">-0.439</td></tr><tr><th class="rowhead">Crashes/km2</th><td style="background:hsl(220 68% 74.1%)">-0.521</td><td style="background:hsl(8 68% 59.4%)">0.871</td><td style="background:hsl(8 68% 58.5%)">0.893</td><td style="background:hsl(8 68% 59.1%)">0.879</td><td style="background:hsl(8 68% 56.55%)">0.939</td><td style="background:hsl(8 68% 60.15%)">0.854</td><td style="background:hsl(8 68% 57.831781503116936%)">0.909</td><td style="background:hsl(8 68% 69.15%)">0.639</td><td class="diag">1.000</td><td style="background:hsl(8 68% 68.85%)">0.646</td><td style="background:hsl(8 68% 65.3076923076923%)">0.731</td><td style="background:hsl(220 68% 79.25874125874125%)">-0.399</td><td style="background:hsl(220 68% 81.9020979020979%)">-0.336</td><td style="background:hsl(220 68% 84%)">-0.286</td><td style="background:hsl(8 68% 88.418227535527%)">0.181</td><td style="background:hsl(220 68% 63%)">-0.786</td></tr><tr><th class="rowhead">Crashes/km Street</th><td style="background:hsl(220 68% 95.7%)">-0.007</td><td style="background:hsl(8 68% 83.1%)">0.307</td><td style="background:hsl(8 68% 78.3%)">0.421</td><td style="background:hsl(8 68% 81.6%)">0.343</td><td style="background:hsl(8 68% 79.05%)">0.404</td><td style="background:hsl(8 68% 86.25%)">0.232</td><td style="background:hsl(8 68% 59.40960155909045%)">0.871</td><td style="background:hsl(8 68% 67.95%)">0.668</td><td style="background:hsl(8 68% 68.85%)">0.646</td><td class="diag">1.000</td><td style="background:hsl(8 68% 67.15384615384616%)">0.687</td><td style="background:hsl(8 68% 73.0909090909091%)">0.545</td><td style="background:hsl(220 68% 95.11888111888112%)">-0.021</td><td style="background:hsl(220 68% 90.45%)">-0.132</td><td style="background:hsl(220 68% 87.2171546698679%)">-0.209</td><td style="background:hsl(220 68% 81.45%)">-0.346</td></tr><tr><th class="rowhead">Crashes/10km BP</th><td style="background:hsl(220 68% 84.46153846153845%)">-0.275</td><td style="background:hsl(8 68% 74.53846153846155%)">0.511</td><td style="background:hsl(8 68% 71.76923076923077%)">0.577</td><td style="background:hsl(8 68% 73.15384615384616%)">0.544</td><td style="background:hsl(8 68% 70.84615384615384%)">0.599</td><td style="background:hsl(8 68% 79.15384615384616%)">0.401</td><td style="background:hsl(8 68% 61.56805545962395%)">0.820</td><td style="background:hsl(8 68% 73.15384615384616%)">0.544</td><td style="background:hsl(8 68% 65.3076923076923%)">0.731</td><td style="background:hsl(8 68% 67.15384615384616%)">0.687</td><td class="diag">1.000</td><td style="background:hsl(8 68% 90.12587412587412%)">0.140</td><td style="background:hsl(8 68% 91.8881118881119%)">0.098</td><td style="background:hsl(220 68% 78.46153846153845%)">-0.418</td><td style="background:hsl(220 68% 89.3076923076923%)">-0.159</td><td style="background:hsl(220 68% 68.3076923076923%)">-0.659</td></tr><tr><th class="rowhead">Crashes/10M Trips</th><td style="background:hsl(8 68% 83.37062937062937%)">0.301</td><td style="background:hsl(220 68% 64.57342657342657%)">-0.748</td><td style="background:hsl(220 68% 71.32867132867133%)">-0.587</td><td style="background:hsl(220 68% 67.21678321678321%)">-0.685</td><td style="background:hsl(220 68% 69.56643356643357%)">-0.629</td><td style="background:hsl(220 68% 68.0979020979021%)">-0.664</td><td style="background:hsl(8 68% 94.67600497484052%)">0.032</td><td style="background:hsl(220 68% 93.35664335664336%)">-0.063</td><td style="background:hsl(220 68% 79.25874125874125%)">-0.399</td><td style="background:hsl(8 68% 73.0909090909091%)">0.545</td><td style="background:hsl(8 68% 90.12587412587412%)">0.140</td><td class="diag">1.000</td><td style="background:hsl(220 68% 93.94405594405595%)">-0.049</td><td style="background:hsl(220 68% 91.5944055944056%)">-0.105</td><td style="background:hsl(220 68% 83.07692307692308%)">-0.308</td><td style="background:hsl(8 68% 81.31468531468532%)">0.350</td></tr><tr><th class="rowhead">Severity %</th><td style="background:hsl(8 68% 68.3916083916084%)">0.657</td><td style="background:hsl(220 68% 87.18881118881119%)">-0.210</td><td style="background:hsl(220 68% 87.48251748251748%)">-0.203</td><td style="background:hsl(220 68% 88.95104895104895%)">-0.168</td><td style="background:hsl(220 68% 83.95804195804196%)">-0.287</td><td style="background:hsl(220 68% 73.97202797202797%)">-0.524</td><td style="background:hsl(220 68% 93.20489939133%)">-0.067</td><td style="background:hsl(8 68% 74.26573426573427%)">0.517</td><td style="background:hsl(220 68% 81.9020979020979%)">-0.336</td><td style="background:hsl(220 68% 95.11888111888112%)">-0.021</td><td style="background:hsl(8 68% 91.8881118881119%)">0.098</td><td style="background:hsl(220 68% 93.94405594405595%)">-0.049</td><td class="diag">1.000</td><td style="background:hsl(8 68% 90.12587412587412%)">0.140</td><td style="background:hsl(220 68% 67.5104895104895%)">-0.678</td><td style="background:hsl(8 68% 87.18881118881119%)">0.210</td></tr><tr><th class="rowhead">BP km</th><td style="background:hsl(8 68% 69.3%)">0.636</td><td style="background:hsl(220 68% 93.45%)">-0.061</td><td style="background:hsl(8 68% 95.25%)">0.018</td><td style="background:hsl(220 68% 94.35%)">-0.039</td><td style="background:hsl(220 68% 86.55%)">-0.225</td><td style="background:hsl(220 68% 78.75%)">-0.411</td><td style="background:hsl(220 68% 90.44006265990286%)">-0.132</td><td style="background:hsl(8 68% 93.9%)">0.050</td><td style="background:hsl(220 68% 84%)">-0.286</td><td style="background:hsl(220 68% 90.45%)">-0.132</td><td style="background:hsl(220 68% 78.46153846153845%)">-0.418</td><td style="background:hsl(220 68% 91.5944055944056%)">-0.105</td><td style="background:hsl(8 68% 90.12587412587412%)">0.140</td><td class="diag">1.000</td><td style="background:hsl(8 68% 82.8632655318537%)">0.313</td><td style="background:hsl(8 68% 66.6%)">0.700</td></tr><tr><th class="rowhead">BP km/km2</th><td style="background:hsl(220 68% 77.90883996100995%)">-0.431</td><td style="background:hsl(8 68% 81.36192444977983%)">0.349</td><td style="background:hsl(8 68% 81.28685739567614%)">0.350</td><td style="background:hsl(8 68% 81.21179034157244%)">0.352</td><td style="background:hsl(8 68% 81.43699150388352%)">0.347</td><td style="background:hsl(8 68% 78.28417523152841%)">0.422</td><td style="background:hsl(8 68% 95.58639195600502%)">0.010</td><td style="background:hsl(220 68% 85.26541126317187%)">-0.256</td><td style="background:hsl(8 68% 88.418227535527%)">0.181</td><td style="background:hsl(220 68% 87.2171546698679%)">-0.209</td><td style="background:hsl(220 68% 89.3076923076923%)">-0.159</td><td style="background:hsl(220 68% 83.07692307692308%)">-0.308</td><td style="background:hsl(220 68% 67.5104895104895%)">-0.678</td><td style="background:hsl(8 68% 82.8632655318537%)">0.313</td><td class="diag">1.000</td><td style="background:hsl(220 68% 95.47453062127414%)">-0.013</td></tr><tr><th class="rowhead">BP Share %</th><td style="background:hsl(8 68% 64.95%)">0.739</td><td style="background:hsl(220 68% 66.9%)">-0.693</td><td style="background:hsl(220 68% 69.45%)">-0.632</td><td style="background:hsl(220 68% 67.5%)">-0.679</td><td style="background:hsl(220 68% 61.95%)">-0.811</td><td style="background:hsl(220 68% 60.6%)">-0.843</td><td style="background:hsl(220 68% 70.22893908576597%)">-0.614</td><td style="background:hsl(220 68% 77.55%)">-0.439</td><td style="background:hsl(220 68% 63%)">-0.786</td><td style="background:hsl(220 68% 81.45%)">-0.346</td><td style="background:hsl(220 68% 68.3076923076923%)">-0.659</td><td style="background:hsl(8 68% 81.31468531468532%)">0.350</td><td style="background:hsl(8 68% 87.18881118881119%)">0.210</td><td style="background:hsl(8 68% 66.6%)">0.700</td><td style="background:hsl(220 68% 95.47453062127414%)">-0.013</td><td class="diag">1.000</td></tr>
+        </tbody>
+      </table>
+      <div class="legend">
+        <span>Strong negative</span>
+        <div class="bar"></div>
+        <span>Strong positive</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
