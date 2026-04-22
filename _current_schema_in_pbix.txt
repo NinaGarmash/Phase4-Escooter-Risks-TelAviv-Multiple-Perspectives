@@ -1,0 +1,736 @@
+<LinguisticSchema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Language="en-US" DynamicImprovement="HighConfidence" xmlns="http://schemas.microsoft.com/sqlserver/2016/01/linguisticschema">
+  <Entities>
+    <Entity Name="markers_hebrew" Source="User">
+      <Words>
+        <Word>accidents</Word>
+        <Word>crashes</Word>
+        <Word>road accidents</Word>
+      </Words>
+      <Attributes>
+        <Attribute Name="accident_severity" Source="User">
+          <Words>
+            <Word>severity</Word>
+            <Word>accident severity</Word>
+            <Word>crash severity</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Accident Severity Score" Source="User">
+          <Words>
+            <Word>severity score</Word>
+            <Word>accident severity score</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="accident_hour" Source="User">
+          <Words>
+            <Word>hour</Word>
+            <Word>time of day</Word>
+            <Word>accident hour</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="accident_day" Source="User">
+          <Words>
+            <Word>accident day</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="day_in_week" Source="User">
+          <Words>
+            <Word>day of week</Word>
+            <Word>weekday</Word>
+            <Word>day name</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="accident_date" Source="User">
+          <Words>
+            <Word>date</Word>
+            <Word>accident date</Word>
+            <Word>crash date</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="yishuv_symbol" Source="User">
+          <Words>
+            <Word>settlement code</Word>
+            <Word>city code</Word>
+            <Word>yishuv</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Has_Bike" Source="User">
+          <Words>
+            <Word>has bike</Word>
+            <Word>bicycle involved</Word>
+            <Word>bike involved</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Has_Ebike" Source="User">
+          <Words>
+            <Word>has ebike</Word>
+            <Word>e-bike involved</Word>
+            <Word>electric bike involved</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="has_scooter" Source="User">
+          <Words>
+            <Word>has e-scooter</Word>
+            <Word>e-scooter involved</Word>
+            <Word>electric scooter involved</Word>
+            <Word>escooter involved</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Has_MobilityScooter" Source="User">
+          <Words>
+            <Word>has mobility scooter</Word>
+            <Word>mobility scooter involved</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="HasMicromobility" Source="User">
+          <Words>
+            <Word>has micromobility</Word>
+            <Word>micromobility involved</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Has Pedestrian" Source="User">
+          <Words>
+            <Word>has pedestrian</Word>
+            <Word>pedestrian involved</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Road Type Label" Source="User">
+          <Words>
+            <Word>road type</Word>
+            <Word>type of road</Word>
+            <Word>urban or rural</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Road Surface Label" Source="User">
+          <Words>
+            <Word>road surface</Word>
+            <Word>surface condition</Word>
+            <Word>pavement</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Road Shape Label" Source="User">
+          <Words>
+            <Word>road shape</Word>
+            <Word>road geometry</Word>
+            <Word>intersection type</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Road Intactness Label" Source="User">
+          <Words>
+            <Word>road intactness</Word>
+            <Word>road condition</Word>
+            <Word>road quality</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Road Control Label" Source="User">
+          <Words>
+            <Word>road control</Word>
+            <Word>traffic control</Word>
+            <Word>signal</Word>
+            <Word>traffic light</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Road Light Label" Source="User">
+          <Words>
+            <Word>day night</Word>
+            <Word>lighting</Word>
+            <Word>light condition</Word>
+            <Word>night time</Word>
+            <Word>at night</Word>
+            <Word>during daytime</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Weather Label" Source="User">
+          <Words>
+            <Word>weather</Word>
+            <Word>weather condition</Word>
+            <Word>rain</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Accident Type Label" Source="User">
+          <Words>
+            <Word>accident type</Word>
+            <Word>crash type</Word>
+            <Word>collision type</Word>
+            <Word>type of accident</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Didnt Cross Label" Source="User">
+          <Words>
+            <Word>didnt cross</Word>
+            <Word>not crossing</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Cross Mode Label" Source="User">
+          <Words>
+            <Word>crossing mode</Word>
+            <Word>how crossing</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Cross Location Label" Source="User">
+          <Words>
+            <Word>crossing location</Word>
+            <Word>where crossing</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Cross Direction Label" Source="User">
+          <Words>
+            <Word>crossing direction</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="provider_and_id" Source="User">
+          <Words>
+            <Word>accident id</Word>
+            <Word>crash id</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="street1_hebrew" Source="User">
+          <Words>
+            <Word>street</Word>
+            <Word>street name</Word>
+            <Word>road name</Word>
+          </Words>
+        </Attribute>
+      </Attributes>
+    </Entity>
+    <Entity Name="involved_hebrew" Source="User">
+      <Words>
+        <Word>people involved</Word>
+        <Word>people in accidents</Word>
+        <Word>crash participants</Word>
+        <Word>accident participants</Word>
+      </Words>
+      <Attributes>
+        <Attribute Name="vehicle_type" Source="User">
+          <Words>
+            <Word>vehicle type code</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="involved_type" Source="User">
+          <Words>
+            <Word>involved type</Word>
+            <Word>involvement type</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="injury_severity" Source="User">
+          <Words>
+            <Word>injury severity</Word>
+            <Word>how badly injured</Word>
+            <Word>injury level</Word>
+            <Word>injury</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="age_group" Source="User">
+          <Words>
+            <Word>age group</Word>
+            <Word>age range</Word>
+            <Word>age</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="age group (basic)" Source="User">
+          <Words>
+            <Word>age category</Word>
+            <Word>age bracket</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="sex_hebrew" Source="User">
+          <Words>
+            <Word>gender</Word>
+            <Word>sex</Word>
+            <Word>male or female</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="population_type_hebrew" Source="User">
+          <Words>
+            <Word>population type</Word>
+            <Word>population group</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="safety_measures_use" Source="User">
+          <Words>
+            <Word>protective gear</Word>
+            <Word>protection</Word>
+            <Word>safety measures</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="injured_type" Source="User">
+          <Words>
+            <Word>injured type</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="is_micro_user" Source="User">
+          <Words>
+            <Word>micromobility user</Word>
+            <Word>micro user</Word>
+            <Word>micromobility vehicle user</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="role" Source="User">
+          <Words>
+            <Word>role</Word>
+            <Word>person role</Word>
+            <Word>driver</Word>
+            <Word>passenger</Word>
+            <Word>pedestrian</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Role (Victim vs Driver)" Source="User">
+          <Words>
+            <Word>victim or driver</Word>
+            <Word>victim status</Word>
+          </Words>
+        </Attribute>
+      </Attributes>
+    </Entity>
+    <Entity Name="vehicles_hebrew" Source="User">
+      <Words>
+        <Word>vehicles</Word>
+        <Word>vehicle records</Word>
+      </Words>
+      <Attributes>
+        <Attribute Name="vehicle_type" Source="User">
+          <Words>
+            <Word>vehicle type</Word>
+            <Word>vehicle category</Word>
+          </Words>
+        </Attribute>
+      </Attributes>
+    </Entity>
+    <Entity Name="Calendar" Source="User">
+      <Words>
+        <Word>calendar</Word>
+        <Word>dates</Word>
+        <Word>time</Word>
+        <Word>time period</Word>
+      </Words>
+      <Attributes>
+        <Attribute Name="Date" Source="User">
+          <Words>
+            <Word>date</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Year" Source="User">
+          <Words>
+            <Word>year</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Start of Month (clusters)" Source="User">
+          <Words>
+            <Word>month</Word>
+          </Words>
+        </Attribute>
+      </Attributes>
+    </Entity>
+    <Entity Name="dim_settlement" Source="User">
+      <Words>
+        <Word>settlement</Word>
+        <Word>city</Word>
+        <Word>municipality</Word>
+      </Words>
+      <Attributes>
+        <Attribute Name="IsTelAviv" Source="User">
+          <Words>
+            <Word>Tel Aviv</Word>
+            <Word>TA</Word>
+            <Word>in Tel Aviv</Word>
+          </Words>
+        </Attribute>
+      </Attributes>
+    </Entity>
+    <Entity Name="dim_vehicles" Source="User">
+      <Words>
+        <Word>vehicle types</Word>
+        <Word>vehicle categories</Word>
+        <Word>transport modes</Word>
+      </Words>
+      <Attributes>
+        <Attribute Name="vehicle_type" Source="User">
+          <Words>
+            <Word>vehicle type</Word>
+            <Word>vehicle code</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="IsMicromobility" Source="User">
+          <Words>
+            <Word>micromobility</Word>
+            <Word>is micromobility</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="IsEscooter" Source="User">
+          <Words>
+            <Word>e-scooter</Word>
+            <Word>escooter</Word>
+            <Word>electric scooter</Word>
+          </Words>
+        </Attribute>
+      </Attributes>
+    </Entity>
+    <Entity Name="Accident_Mode_Dim" Source="User">
+      <Words>
+        <Word>mode</Word>
+        <Word>transport mode</Word>
+        <Word>accident mode</Word>
+        <Word>mobility mode</Word>
+      </Words>
+      <Attributes>
+        <Attribute Name="Mode" Source="User">
+          <Words>
+            <Word>mode</Word>
+            <Word>transport mode</Word>
+            <Word>vehicle mode</Word>
+          </Words>
+        </Attribute>
+      </Attributes>
+    </Entity>
+    <Entity Name="Scope Slicer" Source="User">
+      <Words>
+        <Word>scope</Word>
+        <Word>geographic scope</Word>
+        <Word>region</Word>
+      </Words>
+      <Attributes>
+        <Attribute Name="Scope" Source="User">
+          <Words>
+            <Word>scope</Word>
+            <Word>Israel or Tel Aviv</Word>
+            <Word>region</Word>
+          </Words>
+        </Attribute>
+      </Attributes>
+    </Entity>
+    <Entity Name="Accident Tier" Source="User">
+      <Words>
+        <Word>tier</Word>
+        <Word>accident tier</Word>
+        <Word>accident category</Word>
+      </Words>
+      <Attributes>
+        <Attribute Name="Accident Tier" Source="User">
+          <Words>
+            <Word>tier</Word>
+          </Words>
+        </Attribute>
+      </Attributes>
+    </Entity>
+    <Entity Name="MicromobilityTypes" Source="User">
+      <Words>
+        <Word>micromobility types</Word>
+      </Words>
+      <Attributes>
+        <Attribute Name="VehicleType" Source="User">
+          <Words>
+            <Word>micromobility type</Word>
+          </Words>
+        </Attribute>
+      </Attributes>
+    </Entity>
+    <Entity Name="&amp;AccidentMatrixSource" Source="User">
+      <Words>
+        <Word>accident matrix</Word>
+        <Word>collision matrix</Word>
+        <Word>crash matrix</Word>
+      </Words>
+      <Attributes>
+        <Attribute Name="Counterpart Category" Source="User">
+          <Words>
+            <Word>counterpart</Word>
+            <Word>other vehicle</Word>
+            <Word>collision partner</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Vehicle Type" Source="User">
+          <Words>
+            <Word>vehicle type</Word>
+          </Words>
+        </Attribute>
+      </Attributes>
+    </Entity>
+    <Entity Name="pod1_Definitions" ConceptualEntity="8e110a6d592b6172fb08" Source="Generated">
+      <Words><Word>1.Definitions</Word><Word>definitions</Word></Words>
+    </Entity>
+    <Entity Name="pod2_ConclusionsRecommendations" ConceptualEntity="35238170249555d44e11" Source="Generated">
+      <Words><Word>2.Conclusions&amp;Recommendations</Word><Word>conclusions</Word><Word>recommendations</Word></Words>
+    </Entity>
+    <Entity Name="pod3_IsraelTA_intro" ConceptualEntity="685c2f0a008b727e0307" Source="Generated">
+      <Words><Word>3.Israel-TA intro</Word><Word>Israel overview</Word><Word>Tel Aviv overview</Word></Words>
+    </Entity>
+    <Entity Name="pod6_Accident_Composition" ConceptualEntity="de568ac611361d135a50" Source="Generated">
+      <Words><Word>6 Accident Composition</Word><Word>accident composition</Word></Words>
+    </Entity>
+    <Entity Name="Crash_Details_for_Quarters" ConceptualEntity="23d5ddc010a550e0c05b" Source="Generated">
+      <Words><Word>Crash Details for Quarters</Word><Word>quarter details</Word></Words>
+    </Entity>
+    <Entity Name="Crash_Details_for_Streets" ConceptualEntity="8123b5ae0b6a3009b736" Source="Generated">
+      <Words><Word>Crash Details for Streets</Word><Word>street details</Word></Words>
+    </Entity>
+    <Entity Name="_Measures" Source="User">
+      <Words>
+        <Word>measures</Word>
+        <Word>metrics</Word>
+      </Words>
+      <Attributes>
+        <Attribute Name="Total Accidents" Source="User">
+          <Words>
+            <Word>total accidents</Word>
+            <Word>number of accidents</Word>
+            <Word>accident count</Word>
+            <Word>crash count</Word>
+            <Word>total crashes</Word>
+            <Word>how many accidents</Word>
+            <Word>how many crashes</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Total People Involved" Source="User">
+          <Words>
+            <Word>total people involved</Word>
+            <Word>people involved</Word>
+            <Word>number of people</Word>
+            <Word>how many people</Word>
+            <Word>crash participants</Word>
+            <Word>accident participants</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Vehicle Count" Source="User">
+          <Words>
+            <Word>vehicle count</Word>
+            <Word>number of vehicles</Word>
+            <Word>how many vehicles</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Escooter Accidents" Source="User">
+          <Words>
+            <Word>e-scooter accidents</Word>
+            <Word>escooter accidents</Word>
+            <Word>electric scooter accidents</Word>
+            <Word>scooter crashes</Word>
+            <Word>e-scooter crashes</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Escooter Accidents TA" Source="User">
+          <Words>
+            <Word>e-scooter accidents in Tel Aviv</Word>
+            <Word>escooter accidents Tel Aviv</Word>
+            <Word>scooter crashes in TA</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Escooter Accidents Israel" Source="User">
+          <Words>
+            <Word>e-scooter accidents in Israel</Word>
+            <Word>national e-scooter accidents</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Micromobility Accidents" Source="User">
+          <Words>
+            <Word>micromobility accidents</Word>
+            <Word>micro-mobility accidents</Word>
+            <Word>micromobility crashes</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Micromobility Accidents TA" Source="User">
+          <Words>
+            <Word>micromobility accidents in Tel Aviv</Word>
+            <Word>micromobility in TA</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Micromobility Accidents Israel" Source="User">
+          <Words>
+            <Word>micromobility accidents in Israel</Word>
+            <Word>national micromobility accidents</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Bike Accidents" Source="User">
+          <Words>
+            <Word>bike accidents</Word>
+            <Word>bicycle accidents</Word>
+            <Word>cycling crashes</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Ebike Accidents" Source="User">
+          <Words>
+            <Word>e-bike accidents</Word>
+            <Word>ebike accidents</Word>
+            <Word>electric bike accidents</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="MobilityScooter Accidents" Source="User">
+          <Words>
+            <Word>mobility scooter accidents</Word>
+            <Word>mobility scooter crashes</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Severe Accidents" Source="User">
+          <Words>
+            <Word>severe accidents</Word>
+            <Word>serious accidents</Word>
+            <Word>severe crashes</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Severe Accident %" Source="User">
+          <Words>
+            <Word>accident severity rate</Word>
+            <Word>severe accident rate</Word>
+            <Word>severity rate</Word>
+            <Word>severe accident percent</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Fatal Accidents" Source="User">
+          <Words>
+            <Word>fatal accidents</Word>
+            <Word>deadly crashes</Word>
+            <Word>fatal crashes</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Severe Injuries" Source="User">
+          <Words>
+            <Word>severe injuries</Word>
+            <Word>serious injuries</Word>
+            <Word>severely injured people</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Severe injury %" Source="User">
+          <Words>
+            <Word>injury severity rate</Word>
+            <Word>severe injury rate</Word>
+            <Word>severe injury percent</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Fatalities" Source="User">
+          <Words>
+            <Word>fatalities</Word>
+            <Word>deaths</Word>
+            <Word>killed</Word>
+            <Word>people killed</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Escooter Share %" Source="User">
+          <Words>
+            <Word>e-scooter share</Word>
+            <Word>escooter share</Word>
+            <Word>scooter percentage</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Tel Aviv Share Accidents %" Source="User">
+          <Words>
+            <Word>Tel Aviv share</Word>
+            <Word>TA share of accidents</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Accidents Israel" Source="User">
+          <Words>
+            <Word>accidents in Israel</Word>
+            <Word>Israel accidents</Word>
+            <Word>national accidents</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Accidents TA" Source="User">
+          <Words>
+            <Word>accidents in Tel Aviv</Word>
+            <Word>Tel Aviv accidents</Word>
+            <Word>TA accidents</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Victim Count" Source="User">
+          <Words>
+            <Word>victims</Word>
+            <Word>victim count</Word>
+            <Word>number of victims</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Driver Count" Source="User">
+          <Words>
+            <Word>drivers</Word>
+            <Word>driver count</Word>
+            <Word>number of drivers</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Pedestrian Count" Source="User">
+          <Words>
+            <Word>pedestrians</Word>
+            <Word>pedestrian count</Word>
+            <Word>number of pedestrians</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="Passenger Count" Source="User">
+          <Words>
+            <Word>passengers</Word>
+            <Word>passenger count</Word>
+            <Word>number of passengers</Word>
+          </Words>
+        </Attribute>
+        <Attribute Name="AvgAccPerDay" Source="User">
+          <Words>
+            <Word>average accidents per day</Word>
+            <Word>daily average</Word>
+            <Word>accidents per day</Word>
+          </Words>
+        </Attribute>
+      </Attributes>
+    </Entity>
+  </Entities>
+  <Relationships>
+    <Relationship Source="User">
+      <Phrasings>
+        <AttributePhrasing>
+          <Entity Name="markers_hebrew" />
+          <Attribute Name="accident_severity" />
+        </AttributePhrasing>
+      </Phrasings>
+    </Relationship>
+    <Relationship Source="User">
+      <Phrasings>
+        <PrepositionPhrasing>
+          <Entity Name="markers_hebrew" />
+          <PrepositionalEntity Name="dim_settlement" Preposition="in" />
+        </PrepositionPhrasing>
+      </Phrasings>
+    </Relationship>
+    <Relationship Source="User">
+      <Phrasings>
+        <PrepositionPhrasing>
+          <Entity Name="markers_hebrew" />
+          <PrepositionalEntity Name="Calendar" Preposition="in" />
+        </PrepositionPhrasing>
+      </Phrasings>
+    </Relationship>
+    <Relationship Source="User">
+      <Phrasings>
+        <PrepositionPhrasing>
+          <Entity Name="involved_hebrew" />
+          <PrepositionalEntity Name="markers_hebrew" Preposition="in" />
+        </PrepositionPhrasing>
+      </Phrasings>
+    </Relationship>
+    <Relationship Source="User">
+      <Phrasings>
+        <PrepositionPhrasing>
+          <Entity Name="vehicles_hebrew" />
+          <PrepositionalEntity Name="markers_hebrew" Preposition="in" />
+        </PrepositionPhrasing>
+      </Phrasings>
+    </Relationship>
+    <Relationship Source="User">
+      <Phrasings>
+        <AttributePhrasing>
+          <Entity Name="involved_hebrew" />
+          <Attribute Name="injury_severity" />
+        </AttributePhrasing>
+      </Phrasings>
+    </Relationship>
+    <Relationship Source="User">
+      <Phrasings>
+        <AttributePhrasing>
+          <Entity Name="involved_hebrew" />
+          <Attribute Name="role" />
+        </AttributePhrasing>
+      </Phrasings>
+    </Relationship>
+    <Relationship Source="User">
+      <Phrasings>
+        <AttributePhrasing>
+          <Entity Name="involved_hebrew" />
+          <Attribute Name="safety_measures_use" />
+        </AttributePhrasing>
+      </Phrasings>
+    </Relationship>
+  </Relationships>
+</LinguisticSchema>
+
