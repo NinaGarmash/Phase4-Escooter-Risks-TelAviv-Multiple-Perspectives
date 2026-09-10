@@ -76,4 +76,4 @@
   над самим white paper не велось, только структурная реорганизация папок
   (см. запись выше) и это уточнение.
 - Файлы: `CLAUDE.md`, `LOG.md`.
-- Коммит: _(будет добавлен после `git commit`)_
+- Коммит: `0729339` — "Document where to open the next session in CLAUDE.md"
