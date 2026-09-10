@@ -2,19 +2,22 @@
 description: Вход в проект ISTRC White Paper после перерыва — читает continuity-кит и даёт сводку состояния, ничего не меняя
 ---
 
-Ты входишь в проект **ISTRC White Paper** (`WhitePaperISTRC26/`) после возможного
+Ты входишь в проект **ISTRC White Paper** (`ISTRC_WhitePaper/`) после возможного
 перерыва между сессиями. Это read-only разведка — не редактируй файлы и не
 коммить в рамках этой команды.
 
 Выполни по порядку:
 
-1. Прочитай `WhitePaperISTRC26/STATE.md`, `WhitePaperISTRC26/NEXT_STEPS.md`,
-   `WhitePaperISTRC26/LOG.md` целиком, `WhitePaperISTRC26/ARCHITECTURE.md`
+1. Прочитай `ISTRC_WhitePaper/STATE.md`, `ISTRC_WhitePaper/NEXT_STEPS.md`,
+   `ISTRC_WhitePaper/LOG.md` целиком, `ISTRC_WhitePaper/CLAUDE.md`
    (можно бегло, если уже знаком со структурой из текущего разговора).
 2. Сверь `STATE.md` с реальностью, не доверяй ему буквально:
-   - `git log --oneline -10 -- WhitePaperISTRC26` — есть ли коммиты после
+   - `git log --oneline -10 -- ISTRC_WhitePaper` — есть ли коммиты после
      даты снэпшота в `STATE.md`?
-   - `git status -- WhitePaperISTRC26` — есть ли незакоммиченные изменения?
+   - `git status -- ISTRC_WhitePaper` — есть ли незакоммиченные изменения?
+   - `draft/White_Paper_Draft_v1.md` — сверь его mtime/содержание с тем, что
+     описано в `STATE.md`, и с последними изменениями в `../Article_2026/`
+     (тот же датасет, может обновиться раньше, чем драфт white paper).
    - при расхождении между `STATE.md`/`LOG.md` и реальным состоянием файлов —
      отметь это явно, не молчи о нём.
 3. Дай Nina краткую сводку (не длиннее сводки, которую ты бы дал коллеге,
