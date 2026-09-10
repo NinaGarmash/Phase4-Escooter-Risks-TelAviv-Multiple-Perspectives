@@ -61,4 +61,4 @@
 - Файлы: весь `ESCOOTER_Project/ISTRC_WhitePaper/` создан заново; старые
   `WhitePaperISTRC26/*` и `ISTRC_WHITE_PAPER/*` удалены;
   `.claude/commands/istrc-{resume,next,save}.md` отредактированы.
-- Коммит: _(будет добавлен после `git commit`)_
+- Коммит: `60f25e8` — "Merge WhitePaperISTRC26 and ISTRC_WHITE_PAPER into ISTRC_WhitePaper/"
