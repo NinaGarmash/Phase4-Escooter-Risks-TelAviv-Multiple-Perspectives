@@ -19,4 +19,4 @@
   `istrc-resume.md`, `istrc-save.md`, `istrc-next.md`.
 - Файлы: `WhitePaperISTRC26/{ARCHITECTURE,STATE,NEXT_STEPS,LOG,CLAUDE}.md`,
   `.claude/commands/istrc-{resume,save,next}.md`.
-- Коммит: _(будет добавлен после первого `git commit` для этих файлов)_
+- Коммит: `efa8d19` — "Add ISTRC White Paper continuity kit (docs + slash commands)"
